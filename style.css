@@ -158,26 +158,28 @@ section {
 
 .section-container {
   display: flex;
+  gap: 4rem;
+  height: 80%;
 }
 
 /* PROFILE SECTION */
 
+/* (Optional) Αν τυλίξεις την εικόνα σε <div class="profile-pic"> ... </div> */
 .profile-pic {
-  width: 320px;          /* άλλαξέ το όσο θες */
-  height: 320px;         /* ίδιο με width */
+  width: 320px;
+  height: 320px;
   border-radius: 50%;
-  overflow: hidden;      /* κόβει ό,τι περισσεύει */
+  overflow: hidden;
   display: inline-block;
 }
 
 .profile-pic img {
   width: 100%;
   height: 100%;
-  object-fit: cover;     /* κάνει crop για να γεμίσει κύκλο */
-  object-position: center; /* κεντράρει το crop */
+  object-fit: cover;
+  object-position: center;
   display: block;
 }
-
 
 #profile {
   display: flex;
@@ -186,6 +188,7 @@ section {
   height: 80vh;
 }
 
+/* Αυτό χρησιμοποιεί το template για την hero εικόνα */
 .section__pic-container {
   display: flex;
   height: 400px;
@@ -194,15 +197,14 @@ section {
 
   border-radius: 50%;
   overflow: hidden;
+}
 
-  .section__pic-container img {
+.section__pic-container img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center;
+  object-position: center; /* αν κόβει λάθος: 50% 20% */
   display: block;
-}
-
 }
 
 .section__text {
@@ -330,30 +332,6 @@ section {
   border: rgb(53, 53, 53) 0.1rem solid;
   border-color: rgb(163, 163, 163);
   text-align: center;
-}
-
-.section-container {
-  gap: 4rem;
-  height: 80%;
-}
-
-.section__pic-container {
-  display: flex;
-  height: 400px;
-  width: 400px;
-  margin: auto 0;
-
-  border-radius: 50%;
-  overflow: hidden;
-
-  .section__pic-container img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center;
-  display: block;
-}
-
 }
 
 /* EXPERIENCE SECTION */
