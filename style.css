@@ -473,3 +473,14 @@ footer p {
   align-items: center;
   gap: 3rem;
 }
+
+
+/* Hide About section picture */
+#about .section__pic-container {
+  display: none !important;
+}
+
+/* Make the rest take full width nicely */
+#about .about-details-container {
+  flex: 1;
+}
