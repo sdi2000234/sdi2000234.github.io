@@ -493,3 +493,20 @@ footer p {
 #experience .details-container {
   min-width: 320px;
 }
+
+.project-img{
+  object-fit: cover;
+  aspect-ratio: 1 / 1;
+}
+/* Experience: 3 boxes wrap nicely */
+#experience .about-containers {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+#experience .details-container {
+  flex: 1 1 360px;
+  max-width: 520px;
+}
