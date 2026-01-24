@@ -484,3 +484,12 @@ footer p {
 #about .about-details-container {
   flex: 1;
 }
+
+#experience .about-containers {
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#experience .details-container {
+  min-width: 320px;
+}
